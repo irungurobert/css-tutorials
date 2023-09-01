@@ -1,0 +1,113 @@
+/* begin reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+/* End reset */
+
+/* Utility Classes */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+/* End utility classes */
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    /* background-color: aliceblue;
+    background-size: cover; */
+    /* We can use with the url and insert an image on the gradient */
+    /* background-image:linear-gradient(blue,white); */
+}
+
+.container{
+    /* background settings */
+    
+    background-color: rgb(251, 210,156);
+    background-image: url('../images/img-001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero{
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+      
+
+    /* creates a filter that we can darken or lighten */
+    background-color: hsla(0, 0%, 40%, 0.301);
+
+}
+h1{
+    font-size: 500%;
+    color: aliceblue;
+    /* helps text standout a little bit,covers x-axis,y-axis,blur,color */
+    text-shadow: 2px 2px 5px #000;
+
+    /* 1.trick to make the text more readable and inclusive but not broad */
+    
+    /* background-color: hsla(0, 0%, 0%, 0.401);
+    padding: 0.25rem;
+    border-radius: 10px; */
+
+    /* 2.more broad approach using a div inhtml */
+
+
+}
+
+.profile-pic-figure{
+    width: 35%;
+}
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double grey;
+    border-radius: 50%;
+}
+
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+.example img{
+    width: 25%;
+    /* for responsiveness */
+    height: auto;
+}
+/* img{
+    display: block;
+} */
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url('../images/img-002.jpg');
+    background-size: 100%;
+    text-transform: uppercase;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+
